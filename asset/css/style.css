@@ -53,7 +53,12 @@ body{
     font-size: 35px;
 }
 
+.welcome h1 span {
+    color: #3e72a2;
+}
+
 .welcome p{
     font-size: 18px;
     margin-top: 20px;
+    font-style: italic;
 }
