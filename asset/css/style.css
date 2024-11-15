@@ -14,6 +14,22 @@
     padding-right: 100px;
 }
 
+/* media query */
+
+@media screen and (max-width: 830px){
+    .padding{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .padding{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 /* ------------------- /
 #Body
 / ------------------- */
@@ -63,6 +79,14 @@ header img{
     border-radius: 2px;
     width: fit-content;
     border-bottom: 1px solid #fff;
+}
+
+/* Media query */
+@media screen and (max-width: 830px){
+    header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 /* ------------------- /
@@ -240,6 +264,14 @@ header img{
     font-style: italic;
 }
 
+/* Media query */
+@media screen and (max-width: 730px){
+    .service-container{
+        grid-template-columns: auto;
+    }
+}
+
+
 /* ------------------- /
 #Choose us
 / ------------------- */
@@ -361,6 +393,14 @@ header img{
     transition: 0.5s ease-in-out;
 }
 
+/* Media query */
+
+@media screen and (max-width: 670px){
+    .presentation-container{
+        grid-template-columns: auto;
+    }
+}
+
 /* ------------------- /
 #Advantages
 / ------------------- */
@@ -446,6 +486,12 @@ header img{
 
 /* Media query */
 
+@media screen and (max-width: 670px){
+    .advantage-container{
+        grid-template-columns: auto;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .choose-us-details {
         gap: 10px;
@@ -453,6 +499,7 @@ header img{
         grid-template-columns: auto;
     }
 }
+
 
 /* ------------------- /
 #mission
@@ -483,4 +530,16 @@ header img{
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+/* Media query */
+
+@media screen and (max-width: 670px){
+    .mission-item{
+        grid-template-columns: 100%;
+    }
+    .second-item{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
