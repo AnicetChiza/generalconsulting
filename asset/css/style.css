@@ -188,12 +188,23 @@ body{
 #Project
 / ------------------- */
 
+.project .title h1{
+    text-align: center;
+}
+
+.project .title h2{
+    margin: auto;
+    margin-top: 20px;
+}
+
 .all-project{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     -webkit-column-gap: 10px;
 }
 
@@ -202,7 +213,7 @@ body{
     padding: 10px 20px;
     border-radius: 25px;
     transition-delay: 0.4s;
-    transition: 05s ease-in-out;
+    transition: 0.5s ease-in-out;
     border: 1px solid #dad8d8;
 }
 
@@ -210,4 +221,38 @@ body{
     color: #fff;
     background-color: #3e72a2;
     border: 1px solid #3e72a2;
+}
+
+/* ------------------- /
+#Partenaire
+/ ------------------- */
+
+.partenaire{
+    padding-top: 30px;
+    background-color: #f6f5f5;
+}
+
+.partenaire .title h1{
+    text-align: center;
+}
+
+.partenaire .title h2{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.partenaire-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 80px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.partenaire-container img{
+    height: 130px;
+    object-fit: cover;
+    padding: 10px 10px;
+    border: 1px solid #dad8d8;
 }
