@@ -100,6 +100,40 @@ header img{
     font-style: italic;
 }
 
+.title h1{
+    color: #3c8cc9;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.title h2{
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 3px solid #3c8cc9;
+}
+
+/* Media query */
+@media screen and (max-width: 1000px){
+    .welcome{
+        width: 100%;
+    }
+    
+    .welcome h1{
+        font-size: 25px;
+    }
+    .welcome p{
+        font-size: 16px;
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    
+    .title h2{
+        width: 100px;
+    }
+}
+
 /* ------------------- /
 #circle
 / ------------------- */
@@ -164,19 +198,6 @@ header img{
 .service{
     padding-top: 40px;
     padding-bottom: 40px;
-}
-
-.title h1{
-    color: #3c8cc9;
-    font-size: 30px;
-    font-style: italic;
-}
-
-.title h2{
-    width: 150px;
-    margin-top: 10px;
-    border-radius: 20px;
-    border: 3px solid #3c8cc9;
 }
 
 .service-container{
