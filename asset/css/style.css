@@ -70,7 +70,7 @@ header img{
 / ------------------- */
 
 .general-consulting{
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -309,4 +309,21 @@ header img{
     object-fit: cover;
     padding: 10px 10px;
     border: 1px solid #dad8d8;
+}
+
+/* ------------------- /
+#General consulting
+/ ------------------- */
+.presentation-item{
+    padding: 15px 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    -webkit-column-gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #dad8d8;
+}
+
+.presentation-item h4{
+    color: #3c8cc9;
 }
