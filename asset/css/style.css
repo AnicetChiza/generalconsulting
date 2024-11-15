@@ -314,6 +314,20 @@ header img{
 /* ------------------- /
 #General consulting
 / ------------------- */
+
+.representation .title{
+    margin-top: 30px;
+}
+
+.presentation-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-column-gap: 15px;
+}
+
 .presentation-item{
     padding: 15px 20px;
     display: flex;
