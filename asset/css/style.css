@@ -149,11 +149,11 @@ header img{
 .circle-container::before {
     content: '';
     position: absolute;
-    width: 230px;
-    height: 230px; 
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background: url('../images/partenaire/logooo.jpeg') no-repeat center;
-    background-size: contain;
+    background: url('../images/logo-gcg.png') no-repeat center;
+    background-size: 90%;
     background-color: #3c8cc9;
 }
 
@@ -336,8 +336,6 @@ header img{
     -webkit-column-gap: 10px;
     border-radius: 10px;
     border: 1px solid #dad8d8;
-}
-
-.presentation-item h4{
-    color: #3c8cc9;
+    transition-delay: 0.2s;
+    transition: 0.5s ease-in-out;
 }
