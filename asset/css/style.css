@@ -32,6 +32,8 @@ header{
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: fixed;
     width: 100%;
     z-index: 10;
