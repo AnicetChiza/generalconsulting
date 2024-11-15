@@ -123,6 +123,13 @@ header img{
     color: #3e72a2;
     border: 1px solid #b3b2b2;
     position: absolute;
+    transition-delay: 0.2s;
+    transition: 0.5s ease-in-out;
+}
+
+.circle-container a:hover{
+    color: #fff;
+    background-color: #3e72a2;
 }
 
 .circle-container a:nth-child(1) { transform: rotate(0deg) translate(250px) rotate(0deg); }
@@ -135,7 +142,7 @@ header img{
 .circle-container a:nth-child(8) { transform: rotate(315deg) translate(250px) rotate(-315deg); }
 
 .circle-container::before {
-    content: 'General Consulting';
+    content: 'General Consulting Group';
     position: absolute;
     width: 200px;
     height: 200px;
@@ -143,7 +150,7 @@ header img{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     background-color: #3e72a2;
