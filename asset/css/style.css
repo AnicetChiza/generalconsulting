@@ -215,6 +215,56 @@ header img{
     background-color: #3c8cc9;
 }
 
+/* media query */
+
+@media (max-width: 670px) {
+    .circle-container a {
+        width: 90px;
+        height: 90px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Réduire encore la distance de translation */
+    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(150px) rotate(0deg); }
+    .circle-container a:nth-child(2) { transform: rotate(51.42deg) translate(150px) rotate(-51.42deg); }
+    .circle-container a:nth-child(3) { transform: rotate(102.84deg) translate(150px) rotate(-102.84deg); }
+    .circle-container a:nth-child(4) { transform: rotate(154.26deg) translate(150px) rotate(-154.26deg); }
+    .circle-container a:nth-child(5) { transform: rotate(205.68deg) translate(150px) rotate(-205.68deg); }
+    .circle-container a:nth-child(6) { transform: rotate(257.1deg) translate(150px) rotate(-257.1deg); }
+    .circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(150px) rotate(-308.52deg); }
+
+    /* Réduire encore la taille du centre */
+    .circle-container::before {
+        width: 100px;
+        height: 100px;
+        background-size: 70%;
+    }
+}
+
+@media (max-width: 407px) {
+    .circle-container a {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
+    .circle-container a:nth-child(2) { transform: rotate(51.42deg) translate(120px) rotate(-51.42deg); }
+    .circle-container a:nth-child(3) { transform: rotate(102.84deg) translate(120px) rotate(-102.84deg); }
+    .circle-container a:nth-child(4) { transform: rotate(154.26deg) translate(120px) rotate(-154.26deg); }
+    .circle-container a:nth-child(5) { transform: rotate(205.68deg) translate(120px) rotate(-205.68deg); }
+    .circle-container a:nth-child(6) { transform: rotate(257.1deg) translate(120px) rotate(-257.1deg); }
+    .circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(120px) rotate(-308.52deg); }
+
+    .circle-container::before {
+        width: 80px;
+        height: 80px;
+        background-size: 60%;
+    }
+}
+
 /* ------------------- /
 #services
 / ------------------- */
@@ -354,11 +404,12 @@ header img{
     margin-top: 30px;
     padding-bottom: 80px;
     gap: 10px;
+    flex-wrap: wrap;
     -webkit-column-gap: 10px;
 }
 
 .partenaire-container img{
-    height: 130px;
+    height: 100px;
     object-fit: cover;
     padding: 10px 10px;
     border: 1px solid #dad8d8;
