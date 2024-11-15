@@ -312,7 +312,7 @@ header img{
 }
 
 /* ------------------- /
-#General consulting
+#Representation
 / ------------------- */
 
 .representation .title{
@@ -338,4 +338,76 @@ header img{
     border: 1px solid #dad8d8;
     transition-delay: 0.2s;
     transition: 0.5s ease-in-out;
+}
+
+/* ------------------- /
+#Advantages
+/ ------------------- */
+
+.advantage-container {
+    display: grid;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.lines {
+    display: grid;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    grid-template-columns: 5% auto;
+}
+
+.lines h5 {
+    position: relative;
+    height: 1px;
+    background-color: #3c8cc9;
+}
+
+.lines h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scaleY(0.9);
+    transform-origin: top;
+}
+
+.lines h6 {
+    position: relative;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.lines h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    transform: scaleY(0.9);
+    transform-origin: top;
+}
+
+.advantage-textbox {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.advantage-textbox div h4 {
+    color: #3c8cc9;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 600px) {
+    .choose-us-details {
+        gap: 10px;
+        -webkit-column-gap: 10px;
+        grid-template-columns: auto;
+    }
 }
