@@ -85,6 +85,15 @@ header i{
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.exit{
+    display: none;
 }
 
 .list ul li a{
@@ -106,6 +115,36 @@ header i{
         padding-right: 30px;
     }
 }
+
+@media screen and (max-width: 850px){
+    .menu-icon{
+        display: flex;
+    }
+
+    .list ul{
+        position: fixed;
+        top: 100px;
+        display: flex;
+        width: 100%;
+        left: 0;
+        padding: 40px 0px;
+        flex-direction: column;
+        background-color: #fff;
+        transform: translateX(-120%);
+        transition: 0.8s ease-in-out;
+        transition-delay: 0.3s;
+    }
+
+    .list ul.active{
+        transform: translateX(0);
+    }
+
+    .list ul li a{
+        color: #3c8cc9;
+    }
+}
+
+
 
 /* ------------------- /
 #General consulting
