@@ -88,6 +88,10 @@ header i{
     cursor: pointer;
 }
 
+.menu{
+    display: none;
+}
+
 .menu-icon{
     display: none;
 }
@@ -116,20 +120,21 @@ header i{
     }
 }
 
-@media screen and (max-width: 850px){
-    .menu-icon{
+@media screen and (max-width: 650px){
+
+    .menu{
         display: flex;
     }
 
     .list ul{
         position: fixed;
-        top: 100px;
+        top: 110px;
         display: flex;
         width: 100%;
         left: 0;
         padding: 40px 0px;
         flex-direction: column;
-        background-color: #fff;
+        background-color: #3c8cc9;
         transform: translateX(-120%);
         transition: 0.8s ease-in-out;
         transition-delay: 0.3s;
@@ -140,7 +145,7 @@ header i{
     }
 
     .list ul li a{
-        color: #3c8cc9;
+        color: #fff;
     }
 }
 
@@ -277,7 +282,7 @@ header i{
 @media (max-width: 670px) {
 
     .circle-container{
-        height: 80vh;
+        height: 60vh;
     }
 
     .circle-container a {
@@ -305,9 +310,13 @@ header i{
 }
 
 @media (max-width: 440px) {
+    .circle-container{
+        height: 50vh;
+    }
+
     .circle-container a {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         padding: 8px;
         font-size: 10px;
     }
