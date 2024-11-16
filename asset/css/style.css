@@ -275,9 +275,14 @@ header i{
 /* media query */
 
 @media (max-width: 670px) {
+
+    .circle-container{
+        height: 80vh;
+    }
+
     .circle-container a {
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
         padding: 10px;
         font-size: 12px;
     }
@@ -293,8 +298,8 @@ header i{
 
     /* Réduire encore la taille du centre */
     .circle-container::before {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         background-size: 70%;
     }
 }
