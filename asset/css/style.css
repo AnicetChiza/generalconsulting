@@ -304,10 +304,10 @@ header i{
     }
 }
 
-@media (max-width: 407px) {
+@media (max-width: 440px) {
     .circle-container a {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         padding: 8px;
         font-size: 10px;
     }
@@ -321,8 +321,8 @@ header i{
     .circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(120px) rotate(-308.52deg); }
 
     .circle-container::before {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         background-size: 60%;
     }
 }
