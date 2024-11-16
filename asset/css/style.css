@@ -69,6 +69,24 @@ header img{
     -webkit-column-gap: 35px;
 }
 
+.list{
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    align-items: center;
+}
+
+header i{
+    color: #3c8cc9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 .list ul li a{
     color: #fff;
 }
@@ -154,7 +172,7 @@ header img{
     }
     
     .title h2{
-        width: 100px;
+        width: 40px;
     }
 }
 
@@ -377,6 +395,26 @@ header img{
     .choose-us-container{
         margin-left: 0px;
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .choose-us-item{
+        grid-template-columns: auto;
+        margin-bottom: 40px;
+
+    }
+
+    .about-item{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .choose-us h2{
+        width: 140px;
+    }
+
+    .choose-us-item img{
+        width: 100%;
     }
 }
 
