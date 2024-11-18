@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add event listener to close the show-image when the exit icon is clicked
     bigImage.forEach(bigImage => {
-        const exitIcon = bigImage.querySelector('.exit-icon');
-        exitIcon.addEventListener('click', function() {
+        const iconExit = bigImage.querySelector('.exit-icon');
+        iconExit.addEventListener('click', function() {
             bigImage.style.display = 'none';
         });
     });
