@@ -145,7 +145,7 @@ header i{
     cursor: pointer;
 }
 
-.language:hover .all-languages{
+.language p:hover .all-languages{
     opacity: 1;
 }
 
@@ -186,7 +186,11 @@ header i{
     }
 }
 
-
+@media screen and (max-width: 460px){
+    header img{
+        width: 100px;
+    }
+}
 
 /* ------------------- /
 #General consulting
