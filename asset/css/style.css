@@ -808,13 +808,27 @@ header i{
 
 footer{
     color: #fff;
-    padding: 60px 20px;
+    padding: 60px 100px;
     text-align: center;
     background-color: #3c8cc9;
 }
 
-footer a{
+footer .soft{
     font-size: 14px;
     color: #fff;
+    margin-bottom: 20px;
     border-bottom: 1px solid #fff;
+}
+
+.policy{
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #ececedea;
+    padding-top: 20px;
+    justify-content: center;
+    -webkit-column-gap: 10px;
+}
+
+.policy a{
+    color: #fff;
 }
