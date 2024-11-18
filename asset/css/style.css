@@ -108,6 +108,47 @@ header i{
     border-bottom: 1px solid #fff;
 }
 
+.language{
+    margin-left: 10px;
+    position: relative;
+}
+
+.language p{
+    display: flex;
+    gap: 5px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-column-gap: 5px;
+    align-items: center;
+}
+
+.language .all-languages{
+    width: 190px;
+    display: flex;
+    padding: 30px 30px;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    gap: 2px;
+    gap: 15px;
+    opacity: 0;
+    transition-delay: 0.4s;
+    transition: 0.6s ease-in-out;
+    -webkit-column-gap: 15px;
+    color: #3c8cc9;
+    align-items: start;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #1c1c1c27;
+}
+
+.language span{
+    cursor: pointer;
+}
+
+.language:hover .all-languages{
+    opacity: 1;
+}
+
 /* Media query */
 @media screen and (max-width: 830px){
     header{
