@@ -782,4 +782,14 @@ header i{
 }
 
 
-/* END !!*/
+/* --------------------------
+#Pagination
+--------------------------- */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
