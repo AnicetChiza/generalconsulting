@@ -410,7 +410,6 @@ header i{
 
 .choose-us-container{
     margin-top: 40px;
-    margin-bottom: 40px;
     margin-left: 70px;
     margin-right: 70px;
     display: flex;
@@ -801,4 +800,21 @@ header i{
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0px 1px 10px #d9d9d9;
+}
+
+/* --------------------------
+#footer
+--------------------------- */
+
+footer{
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #3c8cc9;
+}
+
+footer a{
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
