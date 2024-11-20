@@ -53,7 +53,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10;
-    /* background-color: #3c8cc9; */
+    background-color: #3c8cc9;
     /* background: linear-gradient(to right, #16222cf9 0%, #141b1ff5 100%); */
     justify-content: space-between;
 }
