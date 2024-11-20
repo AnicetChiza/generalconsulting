@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.querySelector(".menu-icon");
     const exitIcon = document.querySelector(".exit");
-    const menuList = document.querySelector(".list ul");
+    const menuList = document.querySelector(".my-list");
 
     // Ouvrir le menu
     menuIcon.addEventListener("click", () => {
