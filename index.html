@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="asset/images/logo.png">
     <link rel="stylesheet" href="asset/css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.5/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
 
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
@@ -28,20 +28,19 @@
         <div class="list">
             <div class="my-list">
                 <ul>
-                    <li class="acti"><a href="#">Accueil</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                    <li><a href="status.html">Status</a></li>
+                    <li class="acti"><a href="#" data-i18n="home">Accueil</a></li>
+                    <li><a href="about.html" data-i18n="about">A propos</a></li>
+                    <li><a href="status.html" data-i18n="status">Status</a></li>
                 </ul>
-                <select name="" id="Langues"> 
-                    <option value="" disabled selected>Langues</option>
-                    <option value="">English</option>
-                    <option value="">French</option>
-                    <option value="">Spanish</option>
-                    <option value="">German</option>
-                    <option value="">Chenese</option>
-                    <option value="">Russian</option>
-                    <option value="">Arabic</option>
-                    <option value="">Portuguese</option>
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                    <option value="pt">Português</option>
                 </select>
             </div>
             
@@ -58,7 +57,7 @@
         <div class="general-container padding">
             <div class="welcome">
                 <h1 data-i18n="welcome">Bienvenu chez <span>General Consulting Group</span></h1>
-                <p>Nous sommes déterminés à offrir une expertise de haut niveau en conseil pour accompagner les entreprises et institutions dans la réalisation de leurs objectifs stratégiques. Nos solutions, conçues pour répondre aux défis contemporains, visent à maximiser les performances de nos clients tout en créant de la valeur durable.</p>
+                <p data-i18n="welcome-text">Nous sommes déterminés à offrir une expertise de haut niveau en conseil pour accompagner les entreprises et institutions dans la réalisation de leurs objectifs stratégiques. Nos solutions, conçues pour répondre aux défis contemporains, visent à maximiser les performances de nos clients tout en créant de la valeur durable.</p>
             </div>
         </div>
     </section>
@@ -66,25 +65,25 @@
     <!-- Circle -->
     <section class="circle padding">
         <div class="circle-container">
-            <a class="import" href="importexport.html">
+            <a class="import" href="importexport.html" data-i18n="import-export">
                 <span>Import & Export</span>
             </a>
-            <a class="model" href="https://mod-les-et-h-tesses.vercel.app">
+            <a class="model" href="https://mod-les-et-h-tesses.vercel.app" data-i18n="models-hostesses">
                 <span>Models & Hotesse</span>
             </a>
-            <a class="consult" href="services.html">
+            <a class="consult" href="services.html" data-i18n="consulting">
                 <span>Consulting</span>
             </a>
-            <a class="representation" href="representation.html">
+            <a class="representation" href="representation.html" data-i18n="representation">
                 <span>Représentation</span>
             </a>
-            <a class="softcreatix" href="https://userinterface-gkco.vercel.app">
+            <a class="softcreatix" href="https://userinterface-gkco.vercel.app" data-i18n="softcreatix">
                 <span>Softcreatix</span>
             </a>
-            <a class="penja" href="https://penjaspeppers.com">
+            <a class="penja" href="https://penjaspeppers.com" data-i18n="penja-peppers">
                 <span>Penja Peppers</span>
             </a>
-            <a class="penja" href="https://hotel-tau-henna.vercel.app">
+            <a class="penja" href="https://hotel-tau-henna.vercel.app" data-i18n="booking">
                 <span>Booking</span>
             </a>
         </div>
@@ -93,9 +92,8 @@
     <!-- Partenaire -->
     <section class="partenaire padding">
         <div class="title">
-            <h1>Nos partenaire</h1>
-            <h2></h2>
-            <p style="margin-top: 20px; text-align: center;">Voici nos différents partenaires</p>
+            <h1 data-i18n="partners-title">Nos partenaire</h1>
+            <p data-i18n="partners-text" style="margin-top: 20px; text-align: center;">Voici nos différents partenaires</p>
         </div>
 
         <div class="partenaire-container">
@@ -107,13 +105,13 @@
 
     <!-- footer -->
     <footer>
-        <p>© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
+        <p data-i18n="footer-text">© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
+        <div style="margin-bottom: 20px;" data-i18n="footer-developed-by">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
 
         <div class="policy">
-            <a href="etique.html">Charte d'éthique  |</a>
-            <a href="reglement.html">Réglement intérieur  |</a>
-            <a href="policy.html">Politique générale de charte</a>
+            <a href="etique.html" data-i18n="charte-ethique">Charte d'éthique  |</a>
+            <a href="reglement.html" data-i18n="internal-regulations">Réglement intérieur  |</a>
+            <a href="policy.html" data-i18n="general-policy">Politique générale de charte</a>
         </div>
     </footer>
 
@@ -121,4 +119,5 @@
     <script src="asset/javascript/main.js"></script>
 
 </body>
+
 </html>
