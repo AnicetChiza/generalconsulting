@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="shortcut icon" href="asset/images/logo.png">
 
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,11 +26,24 @@
             <a href="#"><img src="asset/images/logo-gcg.png" alt=""></a>
         </div>
         <div class="list">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li class="acti"><a href="#">A propos</a></li>
-                <li><a href="#">Status</a></li>
-            </ul>
+            <div class="my-list">
+                <ul>
+                    <li class="acti"><a href="#" data-i18n="home">Accueil</a></li>
+                    <li><a href="about.html" data-i18n="about">A propos</a></li>
+                    <li><a href="status.html" data-i18n="status">Status</a></li>
+                </ul>
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                    <option value="pt">Português</option>
+                </select>
+            </div>
+            
             <div class="menu">
                 <i class="bi bi-list-nested menu-icon"></i>
             </div>
@@ -46,40 +61,54 @@
         </div>
     </section>
 
-    <!-- Why to choose us -->
-    <section class="choose-us padding">
-        <div class="title">
-            <h1>Pourquoi choisir General Consulting Group?</h1>
-            <h2></h2>
-
-            <div class="choose-us-container">
-                <div class="choose-us-item about-item">
-                    <img src="asset/images/choose-us/gcg1.jpg" alt="">
-                    <span><strong>01. La collaboration</strong> <br>Nous nous distinguons par notre approche collaborative, notre adaptabilité et notre engagement à fournir des solutions sur mesure qui répondent aux besoins spécifiques de chaque client.</span>
-                </div>
-
-                <div class="choose-us-item">
-                    <span><strong>02. Equipe d'expert</strong> <br>En travaillant avec nous, vous bénéficiez d’une équipe d’experts engagés, d’une approche axée sur les résultats et d’une solide expérience en gestion de projets à fort impact.</span>
-                    <img src="asset/images/choose-us/gcg2.jpg" alt="">
-                </div>
-
-                <div class="choose-us-item about-item">
-                    <img src="asset/images/choose-us/gcg3.jpg" alt="">
-                    <span><strong>03. Transformer les idées</strong> <br> General Consulting Group se consacre à transformer les idées en résultats tangibles et à bâtir des relations durables avec nos clients, tout en contribuant positivement au développement économique de l’Afrique et au-delà.</span>
-                </div>
+    <!-- welcome page -->
+    <section class="general-consulting">
+        <div class="general-container padding">
+            <div class="welcome">
+                <h1 data-i18n="about-title">A propos de <span>General Consulting Group</span></h1>
+                <p data-i18n="about-text">Nous sommes déterminés à offrir une expertise de haut niveau en conseil pour accompagner les entreprises et institutions dans la réalisation de leurs objectifs stratégiques. Nos solutions, conçues pour répondre aux défis contemporains, visent à maximiser les performances de nos clients tout en créant de la valeur durable.</p>
             </div>
         </div>
     </section>
 
+    <!-- Why to choose us -->
+    <section class="choose-us padding">
+        <div class="title">
+            <h1 data-i18n="choose-title">Pourquoi choisir General Consulting Group?</h1>
+            <h2></h2>
+        </div>
+
+        <div class="choose-us-container">
+            <div class="choose-us-item about-item">
+                <img src="asset/images/choose-us/gcg1.jpg" alt="">
+                <span data-i18n="choose-collaboration"><strong>01. La collaboration</strong> <br>Nous nous distinguons par notre approche collaborative, notre adaptabilité et notre engagement à fournir des solutions sur mesure qui répondent aux besoins spécifiques de chaque client.</span>
+            </div>
+
+            <div class="choose-us-item">
+                <span data-i18n="choose-expert"><strong>02. Equipe d'expert</strong> <br>En travaillant avec nous, vous bénéficiez d’une équipe d’experts engagés, d’une approche axée sur les résultats et d’une solide expérience en gestion de projets à fort impact.</span>
+                <img src="asset/images/choose-us/gcg2.jpg" alt="">
+            </div>
+
+            <div class="choose-us-item about-item">
+                <img src="asset/images/choose-us/gcg3.jpg" alt="">
+                <span data-i18n="choose-transform"><strong>03. Transformer les idées</strong> <br> General Consulting Group se consacre à transformer les idées en résultats tangibles et à bâtir des relations durables avec nos clients, tout en contribuant positivement au développement économique de l’Afrique et au-delà.</span>
+            </div>
+        </div>
+    </section>
+
+
     <!-- footer -->
     <footer>
-        <p>© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
+        <p data-i18n="footer-text">© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
+        <div class="author">
+            <p data-i18n="footer-developed-by">Developed by</p> 
+            <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a>
+        </div>
 
         <div class="policy">
-            <a href="etique.html">Charte d'éthique  |</a>
-            <a href="reglement.html">Réglement intérieur  |</a>
-            <a href="policy.html">Politique générale de charte</a>
+            <a href="etique.html" data-i18n="charte-ethique">Charte d'éthique  |</a>
+            <a href="reglement.html" data-i18n="internal-regulations">Réglement intérieur  |</a>
+            <a href="policy.html" data-i18n="general-policy">Politique générale de charte</a>
         </div>
     </footer>
     
