@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="shortcut icon" href="asset/images/logo.png">
 
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,26 +26,37 @@
             <a href="#"><img src="asset/images/logo-gcg.png" alt=""></a>
         </div>
         <div class="list">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="status.html">Status</a></li>
-            </ul>
+            <div class="my-list">
+                <ul>
+                    <li class="acti"><a href="index.html" data-i18n="home">Accueil</a></li>
+                    <li><a href="about.html" data-i18n="about">A propos</a></li>
+                    <li><a href="status.html" data-i18n="status">Status</a></li>
+                </ul>
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                    <option value="pt">Português</option>
+                </select>
+            </div>
             
             <div class="menu">
                 <i class="bi bi-list-nested menu-icon"></i>
             </div>
-            <div class="overlay"></div>
             <i class="bi bi-x-lg exit"></i>
         </div>
     </header>
 
-    <!-- welcome page -->
-    <section class="general-consulting">
+     <!-- welcome page -->
+     <section class="general-consulting">
         <div class="general-container padding">
             <div class="welcome">
-                <h1><span>Représentation</span></h1>
-                <p>Chez General Consulting Group , nous mettons à profit notre expertise diversifiée pour offrir une représentation stratégique, qui permet à nos clients de maximiser leur potentiel de croissance et d’atteindre leurs objectifs commerciaux dans un environnement en perpétuelle évolution. Grâce à une présence solide au Cameroun et au Rwanda, ainsi qu’un réseau de partenaires internationaux, nous sommes parfaitement positionnés pour représenter nos clients auprès des parties prenantes clés dans différents secteurs.</p>
+                <h1><span data-i18n="representation-title">Représentation</span></h1>
+                <p data-i18n="representation-description">Chez General Consulting Group, nous mettons à profit notre expertise diversifiée pour offrir une représentation stratégique...</p>
             </div>
         </div>
     </section>
@@ -51,55 +64,55 @@
     <!-- Representation -->
     <section class="representation padding">
         <div class="title">
-            <h1>Notre approche de représentation repose sur quelques piliers fondamentaux</h1>
-            <h2></h2>
+            <h1 data-i18n="representation-approach">Notre approche de représentation repose sur quelques piliers fondamentaux</h1>
         </div>
 
         <div class="presentation-container">
             <div class="presentation-item">
-                <h4>Compréhension approfondie du marché et de la culture locale :</h4>
-                <p>Nous travaillons à comprendre les subtilités des marchés dans lesquels nos clients souhaitent s’implanter. Cela nous permet de fournir des solutions personnalisées et efficaces pour naviguer dans les exigences légales, culturelles, et économiques locales.</p>
+                <h4 data-i18n="market-understanding">Compréhension approfondie du marché et de la culture locale :</h4>
+                <p data-i18n="market-description">Nous travaillons à comprendre les subtilités des marchés dans lesquels nos clients souhaitent s’implanter...</p>
             </div>
             <div class="presentation-item">
-                <h4>Stratégie de communication et de positionnement de marque :</h4>
-                <p>Nous élaborons des stratégies de communication qui renforcent la visibilité et la notoriété de nos clients. Nos équipes se chargent de coordonner les interactions avec les médias, d’organiser des événements de lancement, et d’engager des campagnes de communication ciblées pour atteindre un large public et susciter l’intérêt des partenaires potentiels.</p>
+                <h4 data-i18n="communication-strategy">Stratégie de communication et de positionnement de marque :</h4>
+                <p data-i18n="communication-description">Nous élaborons des stratégies de communication qui renforcent la visibilité et la notoriété de nos clients...</p>
             </div>
             <div class="presentation-item">
-                <h4>Gestion des relations gouvernementales et institutionnelles :</h4>
-                <p>Généralement essentiel pour les entreprises en croissance, nous aidons nos clients à établir et à entretenir des relations solides avec les organismes gouvernementaux, les organisations non gouvernementales et les institutions locales. Nous guidons nos clients dans le respect des réglementations, facilitons leurs démarches administratives, et leur offrons un accès facilité aux ressources locales.</p>
+                <h4 data-i18n="government-relations">Gestion des relations gouvernementales et institutionnelles :</h4>
+                <p data-i18n="government-description">Généralement essentiel pour les entreprises en croissance, nous aidons nos clients à établir et à entretenir des relations solides...</p>
             </div>
             <div class="presentation-item">
-                <h4>Stratégies de partenariat et de développement des affaires :</h4>
-                <p>Pour garantir un succès durable, nous identifions et facilitons les partenariats stratégiques pour nos clients. Cela peut inclure des alliances avec des distributeurs locaux, des collaborations avec d’autres entreprises, ou des investissements dans des initiatives de développement communautaire.</p>
+                <h4 data-i18n="partnership-strategy">Stratégies de partenariat et de développement des affaires :</h4>
+                <p data-i18n="partnership-description">Pour garantir un succès durable, nous identifions et facilitons les partenariats stratégiques pour nos clients...</p>
             </div>
             <div class="presentation-item">
-                <h4>Stratégie de partenariat</h4>
-                <p>Stratégies de partenariat et de développement des affaires : Pour garantir un succès durable, nous identifions et facilitons les partenariats stratégiques pour nos clients. Cela peut inclure des alliances avec des distributeurs locaux, des collaborations avec d’autres entreprises, ou des investissements dans des initiatives de développement communautaire.</p>
+                <h4 data-i18n="belief-in-clients">Nous croyons en nos clients</h4>
+                <p data-i18n="belief-description">Nous croyons fermement que chaque client a un potentiel unique et que notre rôle est de maximiser ce potentiel...</p>
             </div>
             <div class="presentation-item">
-                <h4>Nous croyons en nos clients</h4>
-                <p>Nous croyons fermement que chaque client a un potentiel unique et que notre rôle est de maximiser ce potentiel en le représentant avec intégrité, compétence, et un dévouement sans faille. Notre équipe dynamique et expérimentée met en œuvre chaque jour des stratégies de représentation innovantes, adaptées à chaque client et à chaque marché.</p>
-            </div>
-            <div class="presentation-item">
-                <h4>Nous sommes votre partenaire</h4>
-                <p>Que vous soyez une entreprise cherchant à vous lancer dans de nouveaux marchés ou à renforcer votre présence dans les marchés actuels, General Consulting Group  est votre partenaire de choix pour une représentation proactive et engagée.</p>
+                <h4 data-i18n="we-are-your-partner">Nous sommes votre partenaire</h4>
+                <p data-i18n="partner-description">Que vous soyez une entreprise cherchant à vous lancer dans de nouveaux marchés ou à renforcer votre présence...</p>
             </div>
         </div>
     </section>
 
+
     <!-- footer -->
     <footer>
-        <p>© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
+        <p data-i18n="footer-text">© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
+        <div class="author">
+            <p data-i18n="footer-developed-by">Developed by</p> 
+            <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a>
+        </div>
 
         <div class="policy">
-            <a href="etique.html">Charte d'éthique  |</a>
-            <a href="reglement.html">Réglement intérieur  |</a>
-            <a href="policy.html">Politique générale de charte</a>
+            <a href="etique.html" data-i18n="charte-ethique">Charte d'éthique  |</a>
+            <a href="reglement.html" data-i18n="internal-regulations">Réglement intérieur  |</a>
+            <a href="policy.html" data-i18n="general-policy">Politique générale de charte</a>
         </div>
     </footer>
     
     <!-- javascript -->
     <script src="asset/javascript/main.js"></script>
+    <script src="asset/javascript/representation.js"></script>
 </body>
 </html>
