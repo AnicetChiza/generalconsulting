@@ -425,6 +425,7 @@ header i{
 
 .service span{
     font-style: italic;
+    color: #3c8cc9;
 }
 
 /* Media query */
