@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="shortcut icon" href="asset/images/logo.png">
 
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -23,66 +25,77 @@
         <div class="logo">
             <a href="#"><img src="asset/images/logo-gcg.png" alt=""></a>
         </div>
-        <div class="list">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="status.html">Status</a></li>
-            </ul>
             
-            <div class="menu">
-                <i class="bi bi-list-nested menu-icon"></i>
+            <div class="list">
+                <div class="my-list">
+                    <ul>
+                        <li><a href="index.html" data-i18n="home">Accueil</a></li>
+                        <li class="acti"><a href="about.html" data-i18n="about">A propos</a></li>
+                        <li><a href="status.html" data-i18n="status">Status</a></li>
+                    </ul>
+                    <select id="language-select">
+                        <option value="fr">Français</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                        <option value="ru">Русский</option>
+                        <option value="ar">العربية</option>
+                        <option value="pt">Português</option>
+                    </select>
+                </div>
+                
+                <div class="menu">
+                    <i class="bi bi-list-nested menu-icon"></i>
+                </div>
+                <i class="bi bi-x-lg exit"></i>
             </div>
-            <div class="overlay"></div>
-            <i class="bi bi-x-lg exit"></i>
-        </div>
     </header>
 
     <!-- welcome page -->
     <section class="general-consulting">
         <div class="general-container padding">
             <div class="welcome">
-                <h1><span>Import-Export</span></h1>
-                <p>Chez General Consulting Group , nous mettons à profit notre expertise diversifiée pour offrir une représentation stratégique, qui permet à nos clients de maximiser leur potentiel de croissance et d’atteindre leurs objectifs commerciaux dans un environnement en perpétuelle évolution. Grâce à une présence solide au Cameroun et au Rwanda, ainsi qu’un réseau de partenaires internationaux, nous sommes parfaitement positionnés pour représenter nos clients auprès des parties prenantes clés dans différents secteurs.</p>
+                <h1><span data-i18n="welcome.title">Import-Export</span></h1>
+                <p data-i18n="welcome.description">Chez General Consulting Group , nous mettons à profit notre expertise diversifiée pour offrir une représentation stratégique, qui permet à nos clients de maximiser leur potentiel de croissance et d’atteindre leurs objectifs commerciaux dans un environnement en perpétuelle évolution. Grâce à une présence solide au Cameroun et au Rwanda, ainsi qu’un réseau de partenaires internationaux, nous sommes parfaitement positionnés pour représenter nos clients auprès des parties prenantes clés dans différents secteurs.</p>
             </div>
         </div>
     </section>
 
     <section class="representation padding">
         <div class="title">
-            <h1>Nos différents services</h1>
+            <h1 data-i18n="services.title">Nos différents services</h1>
             <h2></h2>
         </div>
 
         <div class="presentation-container">
             <div class="presentation-item">
-                <h4>Approvisionnement et Sourcing International :</h4>
-                <p>Grâce à nos collaborations solides avec des fournisseurs de premier plan en Asie, en Europe et en Amérique, nous garantissons un accès direct à une large gamme de produits de qualité supérieure. Que ce soit pour des produits alimentaires, des matériaux de construction, des équipements industriels, ou des biens de consommation, nous nous engageons à trouver des sources fiables et rentables.</p>
+                <h4 data-i18n="service.sourcing.title">Approvisionnement et Sourcing International :</h4>
+                <p data-i18n="service.sourcing.description">Grâce à nos collaborations solides avec des fournisseurs de premier plan en Asie, en Europe et en Amérique, nous garantissons un accès direct à une large gamme de produits de qualité supérieure. Que ce soit pour des produits alimentaires, des matériaux de construction, des équipements industriels, ou des biens de consommation, nous nous engageons à trouver des sources fiables et rentables.</p>
             </div>
             <div class="presentation-item">
-                <h4>Gestion Logistique et Transport :</h4>
-                <p>La logistique est le pilier de notre service. Avec des solutions sur mesure pour chaque expédition, nous organisons le transport international de bout en bout, en nous associant à des transporteurs maritimes, aériens et terrestres. Nous gérons chaque étape de l’expédition, assurant des livraisons ponctuelles et en toute sécurité, quel que soit le volume ou la destination.</p>
+                <h4 data-i18n="service.logistics.title">Gestion Logistique et Transport :</h4>
+                <p data-i18n="service.logistics.description">La logistique est le pilier de notre service. Avec des solutions sur mesure pour chaque expédition, nous organisons le transport international de bout en bout, en nous associant à des transporteurs maritimes, aériens et terrestres. Nous gérons chaque étape de l’expédition, assurant des livraisons ponctuelles et en toute sécurité, quel que soit le volume ou la destination.</p>
             </div>
             <div class="presentation-item">
-                <h4> Accompagnement Douanier :</h4>
-                <p>Naviguer dans les formalités douanières peut être complexe. C'est pourquoi notre équipe spécialisée vous accompagne pour assurer une conformité totale avec les réglementations locales et internationales. Nous nous occupons des formalités d'importation et d'exportation, en minimisant les risques et en optimisant les coûts.</p>
+                <h4 data-i18n="service.customs.title">Accompagnement Douanier :</h4>
+                <p data-i18n="service.customs.description">Naviguer dans les formalités douanières peut être complexe. C'est pourquoi notre équipe spécialisée vous accompagne pour assurer une conformité totale avec les réglementations locales et internationales. Nous nous occupons des formalités d'importation et d'exportation, en minimisant les risques et en optimisant les coûts.</p>
             </div>
             <div class="presentation-item">
-                <h4>Conseil en Commerce International :</h4>
-                <p>Forts d'une expertise multi-sectorielle, nous aidons les entreprises à optimiser leurs stratégies d'import-export. Nous réalisons des études de marché, analysons les opportunités, et proposons des stratégies pour une expansion efficace sur de nouveaux marchés. Nos clients bénéficient ainsi d’une vision claire pour leurs opérations internationales.</p>
+                <h4 data-i18n="service.advisory.title">Conseil en Commerce International :</h4>
+                <p data-i18n="service.advisory.description">Forts d'une expertise multi-sectorielle, nous aidons les entreprises à optimiser leurs stratégies d'import-export. Nous réalisons des études de marché, analysons les opportunités, et proposons des stratégies pour une expansion efficace sur de nouveaux marchés. Nos clients bénéficient ainsi d’une vision claire pour leurs opérations internationales.</p>
             </div>
             <div class="presentation-item">
-                <h4>Solutions de Financement et d’Assurance :</h4>
-                <p>Grâce à nos partenariats avec des institutions financières de confiance, nous facilitons l’accès aux options de financement adaptées à chaque projet. Nous proposons également des couvertures d’assurance pour protéger les marchandises tout au long de la chaîne d'approvisionnement, réduisant ainsi les risques liés aux incidents ou imprévus.</p>
+                <h4 data-i18n="service.finance.title">Solutions de Financement et d’Assurance :</h4>
+                <p data-i18n="service.finance.description">Grâce à nos partenariats avec des institutions financières de confiance, nous facilitons l’accès aux options de financement adaptées à chaque projet. Nous proposons également des couvertures d’assurance pour protéger les marchandises tout au long de la chaîne d'approvisionnement, réduisant ainsi les risques liés aux incidents ou imprévus.</p>
             </div>
         </div>
     </section>
 
     <!-- Avantages -->
     <section class="advantage padding">
-
         <div class="title">
-            <h1>Nos avantages</h1>
+            <h1 data-i18n="advantages.title">Nos avantages</h1>
             <h2></h2>
         </div>
 
@@ -93,8 +106,8 @@
                     <h6></h6>
                 </div>
                 <div class="advantage-textbox">
-                    <h4>Qualité et Fiabilité</h4>
-                    <p>En collaborant avec des fournisseurs de confiance, nous nous assurons que chaque produit respecte des normes de qualité strictes.</p>
+                    <h4 data-i18n="advantage.quality.title">Qualité et Fiabilité</h4>
+                    <p data-i18n="advantage.quality.description">En collaborant avec des fournisseurs de confiance, nous nous assurons que chaque produit respecte des normes de qualité strictes.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -103,8 +116,8 @@
                     <h6></h6>
                 </div>
                 <div class="advantage-textbox">
-                    <h4>Agilité et Rapidité</h4>
-                    <p>Nos processus optimisés nous permettent de répondre rapidement aux besoins urgents, avec une réactivité qui fait la différence.</p>
+                    <h4 data-i18n="advantage.agility.title">Agilité et Rapidité</h4>
+                    <p data-i18n="advantage.agility.description">Nos processus optimisés nous permettent de répondre rapidement aux besoins urgents, avec une réactivité qui fait la différence.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -113,8 +126,8 @@
                     <h6></h6>
                 </div>
                 <div class="advantage-textbox">
-                    <h4>Transparence et Suivi</h4>
-                    <p>Nos clients ont accès à des rapports en temps réel sur l’avancement de leurs commandes et expéditions, favorisant une totale transparence.</p>
+                    <h4 data-i18n="advantage.transparency.title">Transparence et Suivi</h4>
+                    <p data-i18n="advantage.transparency.description">Nos clients ont accès à des rapports en temps réel sur l’avancement de leurs commandes et expéditions, favorisant une totale transparence.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -123,8 +136,8 @@
                     <h6></h6>
                 </div>
                 <div class="advantage-textbox">
-                    <h4>Éthique et Durabilité</h4>
-                    <p> Conscients de notre impact sur l’environnement et les communautés locales, nous privilégions des pratiques d'import-export durables.</p>
+                    <h4 data-i18n="advantage.ethics.title">Éthique et Durabilité</h4>
+                    <p data-i18n="advantage.ethics.description">Conscients de notre impact sur l’environnement et les communautés locales, nous privilégions des pratiques d'import-export durables.</p>
                 </div>
             </div>
         </div>
@@ -133,36 +146,39 @@
     <!-- Mission -->
     <section class="mission padding">
         <div class="title">
-            <h1>Engagement pour l’Afrique</h1>
+            <h1 data-i18n="mission.title">Engagement pour l’Afrique</h1>
             <h2></h2>
         </div>
 
         <div class="mission-container">
             <div class="mission-item">
                 <img src="asset/images/choose-us/gcg2.jpg" alt="">
-                <p>Notre mission va au-delà des transactions commerciales. En tant que société africaine à vision globale, nous investissons dans des initiatives visant à renforcer les échanges intra-africains et à favoriser l’essor économique du continent. Grâce à notre présence au Cameroun et au Rwanda, nous avons une compréhension unique des défis locaux, et nous sommes déterminés à mettre notre savoir-faire au service de la croissance régionale.</p>
+                <p data-i18n="mission.description1">Notre mission va au-delà des transactions commerciales. En tant que société africaine à vision globale, nous investissons dans des initiatives visant à renforcer les échanges intra-africains et à favoriser l’essor économique du continent. Grâce à notre présence au Cameroun et au Rwanda, nous avons une compréhension unique des défis locaux, et nous sommes déterminés à mettre notre savoir-faire au service de la croissance régionale.</p>
             </div>
             <div class="mission-item second-item">
-                <p>Avec General Consulting Group , vous avez un partenaire fiable pour toutes vos opérations d’import-export. Que vous soyez une entreprise en pleine croissance ou un acteur international cherchant à pénétrer le marché africain, nous mettons à votre disposition notre expertise, notre réseau et notre engagement pour un succès durable.</p>
+                <p data-i18n="mission.description2">Avec General Consulting Group, vous avez un partenaire fiable pour toutes vos opérations d’import-export. Que vous soyez une entreprise en pleine croissance ou un acteur international cherchant à pénétrer le marché africain, nous mettons à votre disposition notre expertise, notre réseau et notre engagement pour un succès durable.</p>
                 <img src="asset/images/choose-us/gcg3.jpg" alt="">
             </div>
         </div>
-
     </section>
 
     <!-- footer -->
     <footer>
-        <p>© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
+        <p data-i18n="footer-text">© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
+        <div class="author">
+            <p data-i18n="footer-developed-by">Developed by</p> 
+            <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a>
+        </div>
 
         <div class="policy">
-            <a href="etique.html">Charte d'éthique  |</a>
-            <a href="reglement.html">Réglement intérieur  |</a>
-            <a href="policy.html">Politique générale de charte</a>
+            <a href="etique.html" data-i18n="charte-ethique">Charte d'éthique  |</a>
+            <a href="reglement.html" data-i18n="internal-regulations">Réglement intérieur  |</a>
+            <a href="policy.html" data-i18n="general-policy">Politique générale de charte</a>
         </div>
     </footer>
     
     <!-- javascript -->
     <script src="asset/javascript/main.js"></script>
+    <script src="asset/javascript/importexport.js"></script>
 </body>
 </html>
