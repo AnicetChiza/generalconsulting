@@ -191,6 +191,9 @@ header i{
     header img{
         width: 100px;
     }
+    .my-list{
+        top: 85px;
+    }
 }
 
 /* ------------------- /
@@ -747,6 +750,7 @@ header i{
 .show-image img {
     width: 100%;
     height: 60vh;
+    object-fit: cover;
 }
 
 .show-image i {
@@ -824,6 +828,7 @@ header i{
     }
     .gallery-item img{
         width: 100%;
+        height: 250px;
     }
 }
 

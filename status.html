@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="shortcut icon" href="asset/images/logo.png">
 
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,28 +26,27 @@
             <a href="#"><img src="asset/images/logo-gcg.png" alt=""></a>
         </div>
         <div class="list">
-            <ul>
-                <li class="acti"><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="#">Status</a></li>
-            </ul>
-            <div class="language">
-                <p><i class="bi bi-globe"></i> Langues</p>
-                <div class="all-languages">
-                    <span>English</span>
-                    <span>French</span>
-                    <span>Russian</span>
-                    <span>Spanish</span>
-                    <span>German</span>
-                    <span>Chenese</span>
-                    <span>Arabic</span>
-                    <span>Portuguese</span>
-                </div>
+            <div class="my-list">
+                <ul>
+                    <li ><a href="index.html" data-i18n="home">Accueil</a></li>
+                    <li><a href="about.html" data-i18n="about">A propos</a></li>
+                    <li class="acti"><a href="#" data-i18n="status">Status</a></li>
+                </ul>
+                <select id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="zh">中文</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                    <option value="pt">Português</option>
+                </select>
             </div>
+            
             <div class="menu">
                 <i class="bi bi-list-nested menu-icon"></i>
             </div>
-            <div class="overlay"></div>
             <i class="bi bi-x-lg exit"></i>
         </div>
     </header>
@@ -54,8 +55,13 @@
     <section class="general-consulting">
         <div class="general-container padding">
             <div class="welcome">
-                <h1>Visualisez <span>nos résultats</span></h1>
-                <p>Nous offrons des solutions stratégiques pour accompagner entreprises et institutions à atteindre leurs objectifs et maximiser leurs performances.</p>
+                <h1>
+                    <span data-i18n="title">Visualisez</span>
+                    <span data-i18n="highlight">nos résultats</span>
+                </h1>
+                <p data-i18n="description">
+                    Nous offrons des solutions stratégiques pour accompagner entreprises et institutions à atteindre leurs objectifs et maximiser leurs performances.
+                </p>
             </div>
         </div>
     </section>
@@ -114,18 +120,22 @@
 
     <!-- footer -->
     <footer>
-        <p>© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
-        <div style="margin-bottom: 20px;">Developed by <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a></div>
+        <p data-i18n="footer-text">© 2024 GENERAL CONSULTING GROUP. All rights reserved.</p>
+        <div class="author">
+            <p data-i18n="footer-developed-by">Developed by</p> 
+            <a class="soft" href="https://userinterface-gkco.vercel.app">SoftCreatix.</a>
+        </div>
 
         <div class="policy">
-            <a href="etique.html">Charte d'éthique  |</a>
-            <a href="reglement.html">Réglement intérieur  |</a>
-            <a href="policy.html">Politique générale de charte</a>
+            <a href="etique.html" data-i18n="charte-ethique">Charte d'éthique  |</a>
+            <a href="reglement.html" data-i18n="internal-regulations">Réglement intérieur  |</a>
+            <a href="policy.html" data-i18n="general-policy">Politique générale de charte</a>
         </div>
     </footer>
 
     <!-- javascript -->
     <script src="asset/javascript/main.js"></script>
+    <script src="asset/javascript/status.js"></script>
     
 </body>
 </html>
