@@ -1,0 +1,480 @@
+/* ------------------------- /
+#Admin css page
+/ ------------------------- */
+
+.admin-section {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.first-bloc nav {
+    width: 20%;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    padding: 30px 20px;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.first-bloc nav a,
+.logout-admin {
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    color: #141b1fda;
+    padding: 10px 25px;
+    align-items: center;
+    -webkit-column-gap: 10px;
+    transition-delay: 0.2s;
+    background-color: #f5f5f5;
+    transition: 0.5s ease-in-out;
+}
+
+.logout-admin{
+    width: 100%;
+}
+
+.logout-admin span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.first-bloc nav a span {
+    color: #141b1fda;
+}
+
+.first-bloc nav a:hover {
+    color: #fff;
+    background-color: #3c8cc9;
+}
+
+.first-bloc nav a:hover span {
+    color: #fff;
+}
+
+.first-bloc nav .activ {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #3c8cc9;
+}
+
+.first-bloc nav .activ span {
+    color: #fff;
+}
+
+.first-bloc .logout-admin {
+    border: none;
+    outline: none;
+    color: #141b1fda;
+    font-size: 16px;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.first-bloc .logout-admin span {
+    color: #141b1fda;
+}
+
+.menu-dash{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    margin-right: 50px;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.menu-dash a{
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 25px;
+    border: 1px solid #3c8cc9;
+    background-color: #3c8cc9;
+}
+
+.hamburger {
+    display: none;
+}
+
+.exit-dash {
+    display: none;
+}
+
+.newss {
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #d4dbdf4e;
+    box-shadow: 0px 1px 10px rgba(73, 73, 73, 0.114);
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1080px) {
+    .admin-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .first-bloc nav {
+        position: fixed;
+        right: 100px;
+        top: 0;
+        left: 0px;
+        width: 40%;
+        z-index: 2001;
+        box-shadow: none;
+        transform: translateX(-120%);
+        transition: transform 0.3s ease;
+    }
+    .first-bloc nav.active {
+        transform: translateX(0);
+    }
+    
+    .hamburger {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        border-radius: 50%;
+        font-size: 20px;
+        display: flex;
+        color: #37517e;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+    }
+    .exit-dash {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2002;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #37517e;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+    .overlay-dash {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.799);
+        z-index: 2000;
+    }
+    .overlay-dash.active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .newss {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-bloc nav {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .newss {
+        width: 100%;
+    }
+}
+
+
+/* ------------------------- /
+#
+/ ------------------------- */
+
+.all-items {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-items .bloc-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.bloc-content div {
+    width: 250px;
+    height: 180px;
+    padding: 10px 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    transition-delay: 0.2s;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #dedede;
+    
+}
+
+.bloc-content div i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    color: #37517e;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.bloc-content div p {
+    font-weight: 500;
+}
+
+.bloc-content div span {
+    color: #141b1fda;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.bloc-content div:hover {
+    color: #fff;
+    box-shadow: none;
+    background-color: #3c8cc9;
+    border: 1px solid #3c8cc9;
+}
+
+.bloc-content div:hover i {
+    color: #141b1fda;
+    box-shadow: none;
+}
+
+.bloc-content div:hover span{
+    color: #f1f1f1;
+}
+
+@media screen and (max-width: 578px) {
+    .all-items {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .bloc-content div {
+        width: 100%;
+    }
+}
+
+/* ------------------------------ /
+#Status
+/ ------------------------------ */
+
+.admin-status{
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.my-status img{
+    width: 330px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.delete{
+    margin-top: -4px;
+    color: #da5f5f;
+    text-align: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    border: 1px solid #dedede;
+}
+
+/* media query */
+
+@media screen and (max-width: 400px){
+    .admin-status{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .my-status img{
+        width: 100%;
+    }
+}
+
+/* ------------------------------ /
+#Partenaire
+/ ------------------------------ */
+
+.all-partenaires{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.admin-partenaire img{
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px 10px;
+    border: 1px solid #dad8d8;
+}
+
+/* media query */
+
+@media screen and (max-width: 400px){
+    .all-partenaires{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .admin-partenaire img{
+        width: 100%;
+    }
+}
+
+/* ------------------------------ /
+#Ajouter status & partenaire
+/ ------------------------------ */
+
+.add-status{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-status h3{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.add-status form{
+    width: 50%;
+    padding: 30px 40px;
+    border: 1px solid #dad8d8;
+}
+
+.input-add{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    -webkit-column-gap: 10px;
+}
+
+.input-add .my-input{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 1px 10px #dededee6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.add-status .submit, .login .submit{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #3c8cc9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 900px){
+    .add-status form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .add-status form{
+        width: 100%;
+        padding: 20px 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+/* ------------------------- /
+#Login
+/ ------------------------- */
+
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login h3{
+    text-align: center;
+}
+
+.login form{
+    padding: 30px 40px;
+    width: 45%;
+    border: 1px solid #dad8d8;
+}
+
+.login a{
+    display: flex;
+    margin-top: 20px;
+    color: #3c8cc9;
+}
+
+/* media query */
+@media screen and (max-width: 990px){
+    .login form{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .login form{
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 30px 15px;
+    }
+}
