@@ -268,7 +268,6 @@ header i{
 /* ------------------- /
 #circle
 / ------------------- */
-
 .circle-container {
     position: relative;
     height: 90vh;
@@ -326,59 +325,62 @@ header i{
 /* media query */
 
 @media (max-width: 670px) {
-
-    .circle-container{
+    .circle-container {
         height: 60vh;
     }
 
     .circle-container a {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         padding: 10px;
         font-size: 12px;
     }
 
-    /* Réduire encore la distance de translation */
-    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(150px) rotate(0deg); }
-    .circle-container a:nth-child(2) { transform: rotate(51.42deg) translate(150px) rotate(-51.42deg); }
-    .circle-container a:nth-child(3) { transform: rotate(102.84deg) translate(150px) rotate(-102.84deg); }
-    .circle-container a:nth-child(4) { transform: rotate(154.26deg) translate(150px) rotate(-154.26deg); }
-    .circle-container a:nth-child(5) { transform: rotate(205.68deg) translate(150px) rotate(-205.68deg); }
-    .circle-container a:nth-child(6) { transform: rotate(257.1deg) translate(150px) rotate(-257.1deg); }
-    .circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(150px) rotate(-308.52deg); }
+    /* Ajustement des positions pour 8 éléments */
+    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(130px) rotate(0deg); }
+    .circle-container a:nth-child(2) { transform: rotate(45deg) translate(130px) rotate(-45deg); }
+    .circle-container a:nth-child(3) { transform: rotate(90deg) translate(130px) rotate(-90deg); }
+    .circle-container a:nth-child(4) { transform: rotate(135deg) translate(130px) rotate(-135deg); }
+    .circle-container a:nth-child(5) { transform: rotate(180deg) translate(130px) rotate(-180deg); }
+    .circle-container a:nth-child(6) { transform: rotate(225deg) translate(130px) rotate(-225deg); }
+    .circle-container a:nth-child(7) { transform: rotate(270deg) translate(130px) rotate(-270deg); }
+    .circle-container a:nth-child(8) { transform: rotate(315deg) translate(130px) rotate(-315deg); }
 
-    /* Réduire encore la taille du centre */
+    /* Réduction de la taille du cercle central */
     .circle-container::before {
-        width: 150px;
-        height: 150px;
-        background-size: 70%;
+        width: 140px;
+        height: 140px;
+        background-size: 75%;
     }
 }
 
 @media (max-width: 440px) {
-    .circle-container{
+    .circle-container {
         height: 50vh;
     }
 
     .circle-container a {
-        width: 90px;
-        height: 90px;
-        padding: 8px;
+        width: 80px;
+        height: 80px;
+        padding: 6px;
         font-size: 10px;
     }
 
-    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(120px) rotate(0deg); }
-    .circle-container a:nth-child(2) { transform: rotate(51.42deg) translate(120px) rotate(-51.42deg); }
-    .circle-container a:nth-child(3) { transform: rotate(102.84deg) translate(120px) rotate(-102.84deg); }
-    .circle-container a:nth-child(4) { transform: rotate(154.26deg) translate(120px) rotate(-154.26deg); }
-    .circle-container a:nth-child(5) { transform: rotate(205.68deg) translate(120px) rotate(-205.68deg); }
-    .circle-container a:nth-child(6) { transform: rotate(257.1deg) translate(120px) rotate(-257.1deg); }
-    .circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(120px) rotate(-308.52deg); }
+    /* Ajustement des positions pour 8 éléments */
+    .circle-container a:nth-child(1) { transform: rotate(0deg) translate(100px) rotate(0deg); }
+    .circle-container a:nth-child(2) { transform: rotate(45deg) translate(100px) rotate(-45deg); }
+    .circle-container a:nth-child(3) { transform: rotate(90deg) translate(100px) rotate(-90deg); }
+    .circle-container a:nth-child(4) { transform: rotate(135deg) translate(100px) rotate(-135deg); }
+    .circle-container a:nth-child(5) { transform: rotate(180deg) translate(100px) rotate(-180deg); }
+    .circle-container a:nth-child(6) { transform: rotate(225deg) translate(100px) rotate(-225deg); }
+    .circle-container a:nth-child(7) { transform: rotate(270deg) translate(100px) rotate(-270deg); }
+    .circle-container a:nth-child(8) { transform: rotate(315deg) translate(100px) rotate(-315deg); }
 
+    /* Réduction supplémentaire de la taille du cercle central */
     .circle-container::before {
-        width: 120px;
-        height: 120px;
-        background-size: 60%;
+        width: 110px;
+        height: 110px;
+        background-size: 70%;
     }
 }
 
