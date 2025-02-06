@@ -301,14 +301,15 @@ header i{
     background-color: #3c8cc9;
 }
 
-/* Positionnement précis pour entourer le centre sans espaces */
+/* Positionnement pour 8 éléments répartis également autour du centre */
 .circle-container a:nth-child(1) { transform: rotate(0deg) translate(250px) rotate(0deg); }
-.circle-container a:nth-child(2) { transform: rotate(51.42deg) translate(250px) rotate(-51.42deg); }
-.circle-container a:nth-child(3) { transform: rotate(102.84deg) translate(250px) rotate(-102.84deg); }
-.circle-container a:nth-child(4) { transform: rotate(154.26deg) translate(250px) rotate(-154.26deg); }
-.circle-container a:nth-child(5) { transform: rotate(205.68deg) translate(250px) rotate(-205.68deg); }
-.circle-container a:nth-child(6) { transform: rotate(257.1deg) translate(250px) rotate(-257.1deg); }
-.circle-container a:nth-child(7) { transform: rotate(308.52deg) translate(250px) rotate(-308.52deg); }
+.circle-container a:nth-child(2) { transform: rotate(45deg) translate(250px) rotate(-45deg); }
+.circle-container a:nth-child(3) { transform: rotate(90deg) translate(250px) rotate(-90deg); }
+.circle-container a:nth-child(4) { transform: rotate(135deg) translate(250px) rotate(-135deg); }
+.circle-container a:nth-child(5) { transform: rotate(180deg) translate(250px) rotate(-180deg); }
+.circle-container a:nth-child(6) { transform: rotate(225deg) translate(250px) rotate(-225deg); }
+.circle-container a:nth-child(7) { transform: rotate(270deg) translate(250px) rotate(-270deg); }
+.circle-container a:nth-child(8) { transform: rotate(315deg) translate(250px) rotate(-315deg); }
 
 /* Style du centre avec "BBB NATION" */
 .circle-container::before {
