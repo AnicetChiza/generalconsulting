@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
 
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--Icons-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
@@ -56,9 +57,41 @@
         <div class="general-container padding">
             <div class="welcome">
                 <h1><span>Voyage</span></h1>
-                <p>Découvrez l'univers du Voyage ! Laissez-vous transporter vers des destinations de rêve où l'aventure, la découverte et la magie se conjuguent pour créer des expériences inoubliables. Embarquez avec nous pour explorer des horizons nouveaux. Votre prochaine grande aventure vous attend, prête à transformer chaque moment en souvenir précieux !</p>
+                <p data-aos="fade-up"
+                data-aos-duration="3000">Découvrez l'univers du Voyage ! Laissez-vous transporter vers des destinations de rêve où l'aventure, la découverte et la magie se conjuguent pour créer des expériences inoubliables. Embarquez avec nous pour explorer des horizons nouveaux. Votre prochaine grande aventure vous attend, prête à transformer chaque moment en souvenir précieux !</p>
             </div>
         </div>
+    </section>
+    
+    <!-- Voyage -->
+    <section class="voyage padding">
+        <div class="title">
+            <h1>Notre approche du voyage repose sur des services essentiels.</h1>
+        </div>
+
+        <div class="voyage-container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="voyage-item">
+                <i class="bi bi-globe" style="color: #007bff;"></i>
+                <span>E-Visa</span>
+                <p>Obtenez votre visa en ligne sans effort. Un processus rapide, sécurisé et sans déplacement pour faciliter vos voyages internationaux.</p>
+            </div>
+            <div class="voyage-item">
+                <i class="bi bi-file-earmark-text" style="color: #28a745;"></i>
+                <span>Visa</span>
+                <p>Nous vous assistons dans toutes les démarches pour l’obtention de votre visa, en vous offrant un suivi personnalisé et un service fiable.</p>
+            </div>
+            <div class="voyage-item">
+                <i class="bi bi-ticket-perforated" style="color: #ffc107;"></i>
+                <span>Billets</span>
+                <p>Réservez vos billets d’avion, de train ou de bus aux meilleurs tarifs. Un service simple et rapide pour tous vos déplacements.</p>
+            </div>
+            <div class="voyage-item">
+                <i class="bi bi-shield-check" style="color: #dc3545;"></i>
+                <span>Assurance Voyage</span>
+                <p>Protégez votre voyage avec une assurance complète : santé, annulation, perte de bagages et assistance en cas d’urgence.</p>
+            </div>
+        </div>
+        
     </section>
 
     <!-- footer -->
@@ -81,5 +114,9 @@
     <script src="asset/javascript/main.js"></script>
     <script src="asset/javascript/index.js"></script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
