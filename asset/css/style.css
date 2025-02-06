@@ -1036,3 +1036,9 @@ footer .soft{
     border-radius: 50%;
     border: 1px solid #dad8d8;
 }
+
+@media screen and (max-width: 670px){
+    .voyage-container{
+        grid-template-columns: 100%;
+    }
+}
