@@ -1005,7 +1005,7 @@ footer .soft{
     margin-top: 25px;
 }
 
-.voyage-item{
+.voyage-item, .e-visa-item{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1044,4 +1044,15 @@ footer .soft{
     .voyage-container{
         grid-template-columns: 100%;
     }
+}
+
+/* --------------------------
+#e-visa
+--------------------------- */
+
+.country{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -webkit-column-gap: 8px;
 }
