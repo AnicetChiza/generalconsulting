@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyage</title>
+    <title>Hébergement</title>
 
     <!-- style css -->
     <link rel="shortcut icon" href="asset/images/logo.png">
@@ -56,44 +56,50 @@
     <section class="general-consulting">
         <div class="general-container padding">
             <div class="welcome">
-                <h1 style="font-size: 45px;"><span>Voyages</span></h1>
-                <p data-aos="fade-up" data-aos-duration="3000">Découvrez l'univers du Voyage ! Laissez-vous transporter vers des destinations de rêve où l'aventure, la découverte et la magie se conjuguent pour créer des expériences inoubliables. Embarquez avec nous pour explorer des horizons nouveaux. Votre prochaine grande aventure vous attend, prête à transformer chaque moment en souvenir précieux !</p>
+                <h1 style="font-size: 45px;"><span>Hébergement</span></h1>
+                <p data-aos="fade-up" data-aos-duration="3000">Que vous voyagiez pour le plaisir, le travail ou une occasion spéciale, nous vous aidons à réserver l'hébergement qui vous convient. Hôtels, appartements, maisons d'hôtes ou villas, profitez d'un séjour confortable et adapté à vos besoins.</p>
             </div>
         </div>
     </section>
     
-    <!-- Voyage -->
-    <section class="voyage padding">
-        <div class="title">
-            <h1>Notre approche du voyage repose sur des services essentiels.</h1>
+    <!-- Hebergement -->
+    <section class="hebergement-container padding">
+        <div class="voyage-container">
+            <div class="hebergement-item">
+                <h4>Trouvez l'hébergement idéal pour votre séjour !</h4>
+                <p></p>Que vous voyagiez pour le plaisir, le travail ou une occasion spéciale, nous vous aidons à réserver l'hébergement qui vous convient. Hôtels, appartements, maisons d'hôtes ou villas, profitez d'un séjour confortable et adapté à vos besoins.</p>
+            </div>
+            <div class="hebergement-item">
+                <h4>Comment réserver un hébergement ?</h4>
+                <span><i class="bi bi-check-square-fill"></i> Remplissez le formulaire de réservation avec vos informations.</span>
+                <span><i class="bi bi-check-square-fill"></i> Choisissez le type d’hébergement qui vous convient.</span>
+                <span><i class="bi bi-check-square-fill"></i> Envoyez votre demande à notre agence pour validation.</span>
+                <span><i class="bi bi-check-square-fill"></i> Recevez votre confirmation et profitez de votre séjour !</span>
+            </div>
         </div>
 
-        <div class="voyage-container" data-aos="fade-up" data-aos-duration="2000">
-            <a class="voyage-item" href="e-visa.html">
-                <i class="bi bi-globe" style="color: #007bff;"></i>
-                <span>E-Visa</span>
-                <p>Obtenez votre visa en ligne sans effort. Un processus rapide, sécurisé et sans déplacement pour faciliter vos voyages internationaux.</p>
-            </a>
-            <a class="voyage-item" href="visa.html">
-                <i class="bi bi-file-earmark-text" style="color: #28a745;"></i>
-                <span>Visa</span>
-                <p>Nous vous assistons dans toutes les démarches pour l’obtention de votre visa, en vous offrant un suivi personnalisé et un service fiable.</p>
-            </a>
-            <a class="voyage-item" href="billet.html">
-                <i class="bi bi-ticket-perforated" style="color: #ffc107;"></i>
-                <span>Billets</span>
-                <p>Réservez vos billets d’avion, de train ou de bus aux meilleurs tarifs. Un service simple et rapide pour tous vos déplacements.</p>
-            </a>
-            <a class="voyage-item" href="assurance.html">
-                <i class="bi bi-shield-check" style="color: #dc3545;"></i>
-                <span>Assurance Voyage</span>
-                <p>Protégez votre voyage avec une assurance complète : santé, annulation, perte de bagages et assistance en cas d’urgence.</p>
-            </a>
-            <a class="voyage-item" href="hebergement.html">
-                <i class="bi bi-house-door" style="color: #28a745;"></i>
-                <span>Hébergement</span>
-                <p>Trouvez un hébergement confortable et adapté à vos besoins, que ce soit un hôtel, une maison d’hôtes ou une villa pour votre séjour.</p>
-            </a>
+        <div class="formulaire">
+            <h2>Réservez votre hébergement</h2>
+            <form action="" method="">
+                <input type="text" id="fullName" name="fullName" placeholder="Entrer vos noms" required>
+                <input type="email" id="email" name="email" placeholder="Entrer votre adresse email" required>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Entrer votre numéro de téléphone" required>
+                <input type="text" id="destination" name="destination" placeholder="Destination du séjour" required>
+                <input type="date" id="checkInDate" name="checkInDate" required>
+                <input type="date" id="checkOutDate" name="checkOutDate" required>
+        
+                <select id="accommodationType" name="accommodationType" required>
+                    <option value="" disabled selected>Choisissez le type d’hébergement</option>
+                    <option value="hotel">Hôtel</option>
+                    <option value="appartement">Appartement</option>
+                    <option value="maison-hote">Maison d’hôtes</option>
+                    <option value="villa">Villa</option>
+                </select>
+        
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Informations supplémentaires (facultatif)"></textarea>
+        
+                <button type="submit">Réserver maintenant</button>
+            </form>
         </div>
         
     </section>

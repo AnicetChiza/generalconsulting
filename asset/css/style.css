@@ -1102,7 +1102,7 @@ footer .soft{
 /* --------------------------
 #Billet
 --------------------------- */
-.billet-item{
+.billet-item, .hebergement-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1177,4 +1177,12 @@ footer .soft{
     .formulaire{
         width: 100%;
     }
+}
+
+/* --------------------------
+#Hebergement
+--------------------------- */
+.hebergement-item i{
+    font-size: 14px;
+    color: #3cb83c;
 }
