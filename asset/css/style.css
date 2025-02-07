@@ -1049,10 +1049,31 @@ footer .soft{
 /* --------------------------
 #e-visa
 --------------------------- */
-
 .country{
     display: flex;
     align-items: center;
     gap: 8px;
     -webkit-column-gap: 8px;
+}
+
+.e-visa-content div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -webkit-column-gap: 8px;
+}
+
+.e-visa-content div i{
+    color: #3cb83c;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.price p{
+    font-weight: 700;
 }
