@@ -275,6 +275,9 @@
 }
 
 @media screen and (max-width: 578px) {
+    .all-items{
+        height: fit-content;
+    }
     .all-items {
         margin-top: 100px;
         margin-bottom: 30px;
